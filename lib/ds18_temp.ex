@@ -3,6 +3,14 @@ defmodule Ds18Temp do
 
   @moduledoc """
     Simple example to read temperature from DS18B20 temperature sensor
+
+    Note use of Regex.run and a regex capture to return a value from a string.
+
+    The sysfs file contains the latest reading from the temperature sensor,
+    and is not a text file of multiple readings.
+
+    Also, Nerves uses RingLogger. You will have to enter RingLogger.attach
+    in the console to see the log entries.
   """
 
   require Logger
