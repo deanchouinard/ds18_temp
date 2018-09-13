@@ -40,7 +40,8 @@ defmodule Ds18Temp.MixProject do
     [
       {:nerves, "~> 1.3", runtime: false},
       {:shoehorn, "~> 0.4"},
-      {:ring_logger, "~> 0.4"}
+      {:ring_logger, "~> 0.4"},
+      {:nerves_init_gadget, "~> 0.5"}
     ] ++ deps(@target)
   end
 

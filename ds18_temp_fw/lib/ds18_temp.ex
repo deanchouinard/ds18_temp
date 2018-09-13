@@ -42,6 +42,7 @@ defmodule Ds18Temp do
     |> List.last
     |> Float.parse
     Logger.debug "#{temp/1000} C"
+    Logger.debug "#{temp/1000 * 9/5 + 32} F"
   end
 
 end
